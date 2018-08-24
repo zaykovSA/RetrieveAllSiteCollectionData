@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="75036611-a759-43b7-bac7-c54c1360505c" 
+        solutionId="75036611-a759-43b7-bac7-c54c1360505c" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="RetrieveAllSiteCollectionData"
+        sharePointProductVersion="15.0">
+</package>
