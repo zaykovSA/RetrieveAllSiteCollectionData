@@ -73,6 +73,7 @@
     <None Include="ContentTypes\PagedDocument\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{35a05cb4-785b-49c0-9170-b5273501dcb7}</SharePointProjectItemId>
     </None>
+    <None Include="DeployScript\DeploySoutions.ps1" />
     <None Include="Features\WebPartsFeature\WebPartsFeature.feature">
       <FeatureId>{d811246e-dc80-4e82-a6c6-fad0485a96a6}</FeatureId>
     </None>
