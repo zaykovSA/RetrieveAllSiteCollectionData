@@ -40,29 +40,72 @@
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Publishing.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\WebPartsFeature\WebPartsFeature.EventReceiver.cs">
+      <DependentUpon>WebPartsFeature.feature</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteCollectionFilterDataWP\SiteCollectionFilterDataWP.cs" />
+    <Compile Include="SiteCollectionFilterDataWP\SiteCollectionFilterDataWPUserControl.ascx.cs">
+      <DependentUpon>SiteCollectionFilterDataWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteCollectionFilterDataWP\SiteCollectionFilterDataWPUserControl.ascx.designer.cs">
+      <DependentUpon>SiteCollectionFilterDataWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="ContentTypes\PagedDocument\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{35a05cb4-785b-49c0-9170-b5273501dcb7}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\WebPartsFeature\WebPartsFeature.feature">
+      <FeatureId>{d811246e-dc80-4e82-a6c6-fad0485a96a6}</FeatureId>
+    </None>
     <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c318f32b-a553-490c-a997-8c173ba0572a}</SharePointProjectItemId>
+    </None>
     <None Include="Package\Package.package">
       <PackageId>{75036611-a759-43b7-bac7-c54c1360505c}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="SiteCollectionFilterDataWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{470c1ef1-b069-41fd-a046-c14ba6fc9e36}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteCollectionFilterDataWP\SiteCollectionFilterDataWP.webpart" />
+    <None Include="SiteColumns\PagedDocumentColumns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{18a55ac9-86f9-4f83-9862-311d079af9fc}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Features\" />
+    <Content Include="ContentTypes\PagedDocument\Elements.xml" />
+    <Content Include="Features\WebPartsFeature\WebPartsFeature.Template.xml">
+      <DependentUpon>WebPartsFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\RetrieveAllSiteCollectionData\CSS\SiteCollectionItemsSearch.css" />
+    <Content Include="Layouts\RetrieveAllSiteCollectionData\JS\jquery-2.2.4.min.js" />
+    <Content Include="Layouts\RetrieveAllSiteCollectionData\JS\SiteCollectionItemsSearch.js" />
+    <Content Include="SiteCollectionFilterDataWP\Elements.xml" />
+    <Content Include="SiteCollectionFilterDataWP\SiteCollectionFilterDataWPUserControl.ascx" />
+    <Content Include="SiteColumns\PagedDocumentColumns\Elements.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{5D8F1A4A-9908-4204-B800-3BD2510ACA5C}"
+       Name="Announcement"
+       StaticName="Announcement"
+       DisplayName="Описание"
+       Type="Note"
+       Required="TRUE"
+       MaxLength="255"
+       Group="Колонки документов с обозначением страниц">
+  </Field>
+  <Field
+       ID="{670218d5-2856-4815-b89f-3a6ee5b251b9}"
+       Name="PagesCount"
+       StaticName="PagesCount"
+       DisplayName="Количество страниц"
+       Type="Number"
+       Required="TRUE"
+       Group="Колонки документов с обозначением страниц">
+  </Field>
+</Elements>

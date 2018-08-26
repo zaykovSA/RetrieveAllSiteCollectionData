@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="RetrieveAllSiteCollectionData.SiteCollectionFilterDataWP.SiteCollectionFilterDataWP, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Поиск элементов по сайт коллекции</property>
+        <property name="Description" type="string">Веб-часть для поиска по всем узлам и спискам в рамках текущей сайт-коллекции</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

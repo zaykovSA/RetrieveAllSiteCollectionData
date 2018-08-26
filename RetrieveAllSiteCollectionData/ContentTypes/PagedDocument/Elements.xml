@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document (0x0101) -->
+  <ContentType ID="0x0101007539449A8E8A43C3A926972C7D2D29ED" Name="PagedDocument" Group="Custom Content Types" Description="Тип контента документа с определением количества страниц" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{5D8F1A4A-9908-4204-B800-3BD2510ACA5C}" DisplayName="Описание" Required="TRUE" Name="Announcement" />
+      <FieldRef ID="{670218d5-2856-4815-b89f-3a6ee5b251b9}" DisplayName="Количество страниц" Required="TRUE" Name="PagesCount" />
+    </FieldRefs>
+  </ContentType>
+</Elements>
